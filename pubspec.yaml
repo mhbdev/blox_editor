@@ -1,0 +1,50 @@
+name: blox_editor
+description: BloxEditor Flutter Plugin
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+  flutter: ">=3.13.9"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  equatable: ^2.0.5
+  flutter_quill: ^8.5.4
+  camera: ^0.10.3
+  file_picker: ^6.1.1
+  flutter_feather_icons: any
+  permission_handler: any
+  device_info_plus: any
+  provider: ^6.1.1
+  video_player: any
+  uuid: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: net.apexteam.blox_editor
+        pluginClass: BloxEditorPlugin
+      ios:
+        pluginClass: BloxEditorPlugin
+      linux:
+        pluginClass: BloxEditorPlugin
+      macos:
+        pluginClass: BloxEditorPlugin
+      windows:
+        pluginClass: BloxEditorPluginCApi
+      web:
+        pluginClass: BloxEditorWeb
+        fileName: blox_editor_web.dart
